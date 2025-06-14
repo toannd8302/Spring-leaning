@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.basic.autowired;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

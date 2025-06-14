@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.basic.dependency;
 
 public class Person {
     public Person() {

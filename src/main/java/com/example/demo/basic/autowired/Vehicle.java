@@ -1,8 +1,11 @@
-package com.example.demo;
+package com.example.demo.basic.autowired;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Vehicle {
 
-    private String name;
+    private String name = "Toyota";
 
     public Vehicle(String name) {
         this.name = name;
