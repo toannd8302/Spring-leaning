@@ -12,11 +12,20 @@ public class ProjectConfig {
         return vehicle;
     }
 
+//    @Bean
+//    public Person person() {
+//        Person person = new Person();
+//        person.setName("Lucy");
+//        person.setVehicle(vehicle()); //Create an dependency with Vehicle class
+//        return person;
+//    }
+
     @Bean
-    public Person person() {
+    public  Person person2(Vehicle vehicle){
         Person person = new Person();
         person.setName("Lucy");
-        person.setVehicle(vehicle());
+        person.setVehicle(vehicle);
         return person;
     }
+
 }
