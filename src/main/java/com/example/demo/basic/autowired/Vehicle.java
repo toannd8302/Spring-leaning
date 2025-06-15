@@ -7,24 +7,24 @@ import org.springframework.stereotype.Component;
 public class Vehicle {
 
     private String name;
-    @Autowired
-    private Person person;
-
-    public Vehicle(String name) {
-        this.name = name;
-    }
-
-    public Vehicle(Person person) {
-        this.person = person;
-    }
-
-    public Person getPerson() {
-        return person;
-    }
-
-    public void setPerson(Person person) {
-        this.person = person;
-    }
+//    @Autowired
+//    private Person person;
+//
+//    public Vehicle(String name) {
+//        this.name = name;
+//    }
+//
+//    public Vehicle(Person person) {
+//        this.person = person;
+//    }
+//
+//    public Person getPerson() {
+//        return person;
+//    }
+//
+//    public void setPerson(Person person) {
+//        this.person = person;
+//    }
 
     public Vehicle() {
         System.out.println("Vehicle bean create d by Spring");
