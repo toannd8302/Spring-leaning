@@ -23,7 +23,7 @@ public class ProjectConfig {
     }
 
     @Bean
-    //@Primary //Auto take this Bean as a default value
+    @Primary //Auto take this Bean as a default value
     Vehicle vehicle3() {
         var veh = new Vehicle();
         veh.setName("Ferrari");

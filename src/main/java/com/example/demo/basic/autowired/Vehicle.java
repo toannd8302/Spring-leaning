@@ -1,14 +1,29 @@
 package com.example.demo.basic.autowired;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Vehicle {
 
-    private String name = "Toyota";
+    private String name;
+    @Autowired
+    private Person person;
 
     public Vehicle(String name) {
         this.name = name;
+    }
+
+    public Vehicle(Person person) {
+        this.person = person;
+    }
+
+    public Person getPerson() {
+        return person;
+    }
+
+    public void setPerson(Person person) {
+        this.person = person;
     }
 
     public Vehicle() {

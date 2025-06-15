@@ -8,10 +8,15 @@ import org.springframework.stereotype.Component;
 public class Person {
 
     private String name = "Lucy";
+    private Vehicle vehicle;
 
     /* Inject beans (objects) at runtime by Spring Dependency Injection mechanism */
-    @Qualifier("vehicle3")
-    private Vehicle vehicle;
+    //@Qualifier("vehicle3")
+    @Autowired
+    public Person(Vehicle vehicle){
+        System.out.println("Person bean created by Spring");
+        this.vehicle = vehicle;
+    }
 
     public String getName() {
         return name;
@@ -25,7 +30,5 @@ public class Person {
         return vehicle;
     }
 
-    public void setVehicle(Vehicle vehicle) {
-        this.vehicle = vehicle;
-    }
+
 }
