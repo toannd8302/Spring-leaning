@@ -12,8 +12,10 @@ public class Main {
         String[] persons = context.getBeanNamesForType(Owner.class);
         Owner person = context.getBean(Owner.class);
         String[] names = context.getBeanNamesForType(Vehicle.class);
-        Vehicle vehicle = context.getBean(Vehicle.class);
-        vehicle.getVehicleServices().playMusic();
-        vehicle.getVehicleServices().moveVehicle();
+//        Vehicle vehicle = context.getBean(Vehicle.class);
+//        vehicle.getVehicleServices().playMusic();
+//        vehicle.getVehicleServices().moveVehicle();
+        person.getVeh().getVehicleServices().playMusic();
+        person.getVeh().getVehicleServices().moveVehicle();
     }
 }
