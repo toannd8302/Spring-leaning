@@ -10,8 +10,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Main {
     public static void main(String[] args) {
         var context = new AnnotationConfigApplicationContext(ProjectConfiguration.class);
+        System.out.println("Before retrieving the Owner from bean from the Spring Context");
         String[] persons = context.getBeanNamesForType(Owner.class);
         Owner person = context.getBean(Owner.class);
+        System.out.println("After retrieving the Owner bean from Spring Context");
         String[] names = context.getBeanNamesForType(Vehicle.class);
 //        Vehicle vehicle = context.getBean(Vehicle.class);
 //        vehicle.getVehicleServices().playMusic();
@@ -25,5 +27,8 @@ public class Main {
         if (services1 == services2){
             System.out.println("VehicleServices bean is a singleton scoped bean");
         }
+
+
+
     }
 }
