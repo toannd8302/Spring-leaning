@@ -3,9 +3,13 @@ package com.example.demo.basic.practice.implementation.services;
 import com.example.demo.basic.practice.implementation.speakers.Speakers;
 import com.example.demo.basic.practice.implementation.types.Tyres;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.config.BeanDefinition;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+//@Scope(BeanDefinition.SCOPE_SINGLETON) default
+@Scope(BeanDefinition.SCOPE_SINGLETON)
 public class VehicleServices {
     @Autowired
     private Speakers speakers;
