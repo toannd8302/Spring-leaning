@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 //@Scope(BeanDefinition.SCOPE_SINGLETON) default
-@Scope(BeanDefinition.SCOPE_SINGLETON)
+@Scope(BeanDefinition.SCOPE_PROTOTYPE) // Mỗi lần sử dụng thì Spring sẽ t động tạo khởi tạo đối tượng mới
 public class VehicleServices {
     @Autowired
     private Speakers speakers;

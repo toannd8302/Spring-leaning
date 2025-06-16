@@ -26,9 +26,9 @@ public class Main {
         System.out.println("Hashcode of the object vehicleServices2: " + services2.hashCode() );
         if (services1 == services2){
             System.out.println("VehicleServices bean is a singleton scoped bean");
+        }else{
+            System.out.println("VehicleServices bean is a prototype scoped bean");
         }
-
-
 
     }
 }
