@@ -25,6 +25,10 @@ public class VehicleServices {
         String status = tyres.rotate();
         System.out.println(status);
     }
+    public void moveVehicle(boolean status) {
+         status = tyres.rotateBool();
+        System.out.println(status);
+    }
 
     public Speakers getSpeakers() {
         return speakers;
