@@ -19,6 +19,13 @@
         <artifactId>spring-aop</artifactId>
         <version>6.2.6</version>
     </dependency>
+    <!-- AspectJ Weaver -->
+    <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjweaver</artifactId>
+        <version>1.9.21</version>
+    </dependency>
+
 </dependencies>
     <properties>
         <maven.compiler.source>19</maven.compiler.source>
